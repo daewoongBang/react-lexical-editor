@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    background-color: #eee;
+}
+
+.editor-container {
+    margin:20px auto 20px auto;
+    text-align: left;
+}
+
+.editor-inner {
+    background-color: #fff;
+    position: relative;
+}
+
+.editor-input {
+    min-height: 150px;
+    padding: 15px 10px;
+    position: relative;
+    font-size:15px;
+}
+
+.editor-placeholder {
+    color:#999;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: ellipsis;
+    top: 15px;
+    left:10px;
+    user-select: none;
+    display: inline-block;
+    pointer-events: none;
+}
+
+.editor-paragraph {
+    margin: 0;
+    margin-bottom: 8px;
+    position:relative;
+}
+
+.editor-paragraph:last-child {
+    margin-bottom: 0;
+}
+
+.toolbar {
+    display: flex;
+    background-color: #fff;
+    padding: 4px;
+    border-bottom: 1px solid #eee;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.toolbar .divider {
+    width: 1px;
+    background-color: #eee;
+    margin: 0 4px;
+}
+
+.toolbar button.toolbar-item {
+    border: 0;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.toolbar button.toolbar-item:hover:not([disabled]) {
+    background-color: #eee;
+}
+
+.toolbar button.toolbar-item:disabled {
+    cursor: not-allowed;
+    opacity: 0.2;
+}
+
+.toolbar button.toolbar-item svg {
+    color: #000000
+}
+
+.toolbar button.toolbar-item.active svg {
+    color: #3146ff
+}

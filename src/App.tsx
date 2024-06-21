@@ -1,7 +1,15 @@
 import React from 'react';
 
+import Editor from './Editor';
+
 function App() {
-  return <div>test</div>;
+  return (
+    <div className='app'>
+      <h1>Lexical Editor</h1>
+
+      <Editor />
+    </div>
+  );
 }
 
 export default App;
